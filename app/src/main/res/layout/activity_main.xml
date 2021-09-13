@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/nomeCompletoEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome Completo" />
+
+
+    <EditText
+        android:id="@+id/telefoneEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Telefone"/>
+
+    <EditText
+        android:id="@+id/emailEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"/>
+
+    <CheckBox
+        android:id="@+id/ingressarCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingressar na lista de e-mails?"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sexo"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/masculinoRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:text="Masculino"/>
+
+        <RadioButton
+            android:id="@+id/femininoRb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Feminino"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/cidadeEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cidade"/>
+
+    <EditText
+        android:id="@+id/ufEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="UF"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/limparBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="Limpar"/>
+
+        <Button
+            android:id="@+id/salvrBt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            android:text="Salvar"/>
+
+
+    </LinearLayout>
+
+ </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
