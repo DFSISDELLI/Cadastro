@@ -9,32 +9,48 @@
     tools:context=".MainActivity">
 
 
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/nome_completo"/>
+
+
     <EditText
         android:id="@+id/nomeCompletoEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nome Completo" />
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/telefone"/>
 
 
     <EditText
         android:id="@+id/telefoneEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="phone"
-        android:hint="Telefone"/>
+        android:inputType="phone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/email"/>
+
 
     <EditText
         android:id="@+id/emailEt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textEmailAddress"
-        android:hint="E-mail"/>
+        android:inputType="textEmailAddress" />
 
     <CheckBox
         android:id="@+id/ingressarCb"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ingressar na lista de e-mails?"/>
+        android:checked="true"
+        android:text="@string/ingressar"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,6 +58,7 @@
         android:text="Sexo"/>
 
     <RadioGroup
+        android:id="@+id/sexoRg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -52,29 +69,38 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:checked="true"
-            android:text="Masculino"/>
+            android:text="@string/masculino"/>
 
         <RadioButton
             android:id="@+id/femininoRb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Feminino"/>
+            android:text="@string/feminino"/>
 
     </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cidade"/>
 
     <EditText
         android:id="@+id/cidadeEt"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Cidade"/>
+        android:layout_height="wrap_content" />
 
-    <EditText
-        android:id="@+id/ufEt"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/uf"/>
+
+
+    <Spinner
+        android:id="@+id/ufSp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="UF"/>
-
+        android:entries="@array/UF" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -87,15 +113,15 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginHorizontal="5dp"
-            android:text="Limpar"/>
+            android:text="@string/limpar"/>
 
         <Button
-            android:id="@+id/salvrBt"
+            android:id="@+id/salvarBt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:layout_marginHorizontal="5dp"
-            android:text="Salvar"/>
+            android:text="@string/salvar"/>
 
 
     </LinearLayout>
